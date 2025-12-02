@@ -1,5 +1,27 @@
-# ProjetWeb
-MathArena est une plateforme interactive où deux joueurs s'affrontent dans un duel en répondant à des questions de calcul mental mathématiques.
-Il y a également un mode solo pour s'entraîner tout seul où le but est de terrasser chaque ennemi qui s'interpose devant nous en répondant à des questions de plus en plus difficiles.
-Dans ce jeu il est non seulement possible d'améliorer son personnage en tuant des ennemis mais aussi de s'améliorer nous-même en travaillant notre calcul mental.
-Notre jeu se base sur le site MathTrainer qui a été notre source d'inspiration principale.
+# Projet Web : MathArena
+
+## Membres du projet
+
+- GREMILLET Ronan
+- BERTAUD Benjamin
+- ROMPILLON Quentin
+
+## Présentation globale
+
+MathArena est un site développé par 3 étudiants en 4e année de cycle ingénieur, spécialité Systèmes Automatisés et Génie Informatique (SAGI), dans le cadre d'un cours de programmation Web mettant en œuvre HTML, CSS et JavaScript. Le site a pour objectif premier d'entraîner les utilisateurs au calcul mental. Pour cela, nous abordons les calculs via une approche ludique (gamification).
+
+L'idée de ce projet nous est venue en voyant le site [MathTrainer](https://mathtrainer.ai/). Le fond est pratiquement le même, mais la différence réside dans les fonctionnalités que nous apportons et l'approche "jeu vidéo".
+
+## Les différents modes de jeu
+
+### Solo
+
+Dans ce mode de jeu, le joueur joue sans fin précise. Des questions de calcul mental apparaissent en fonction de son niveau et la difficulté augmente progressivement.
+
+### Campagne
+
+Dans ce mode de jeu, le joueur affronte des bots. Chaque bot a son propre niveau de difficulté. Pour battre un bot, il faut répondre correctement au calcul affiché, sinon un malus est infligé au joueur. À chaque niveau, sa vie se régénère.
+
+### Multijoueur
+
+Dans ce mode de jeu, le joueur a la possibilité de tester ses capacités en calcul mental face à un autre joueur sur le site. La connexion entre les deux peut être aléatoire ou via un code pour rejoindre une partie entre amis.
