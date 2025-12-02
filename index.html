@@ -1,88 +1,99 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MathArena - Combattez par le Calcul</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body class="light-mode">
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="light-mode">
     <header class="main-header">
-        <button id="settings-btn" class="pixel-btn">⚙️ Options</button>
-        
-        <nav class="nav-links left">
-            <a href="#" class="nav-item active">Solo</a>
-            <a href="#" class="nav-item">Campagne</a>
-        </nav>
+      <button id="settings-btn" class="pixel-btn">⚙️ Options</button>
 
-        <div class="logo-container">
-            <h1>MathArena</h1>
-        </div>
+      <nav class="nav-links left">
+        <a href="#" class="nav-item active">Solo</a>
+        <a href="#" class="nav-item">Campagne</a>
+      </nav>
 
-        <nav class="nav-links right">
-            <a href="#" class="nav-item">Multi</a>
-            <a href="#" class="nav-item">Stats</a>
-            <a href="#" class="nav-item">Perso</a>
-        </nav>
+      <div class="logo-container">
+        <h1>MathArena</h1>
+      </div>
+
+      <nav class="nav-links right">
+        <a href="#" class="nav-item">Multi</a>
+        <a href="#" class="nav-item">Stats</a>
+        <a href="#" class="nav-item">Perso</a>
+      </nav>
     </header>
 
     <main id="game-arena">
-        
-        <div class="character-zone hero-zone">
-            <div class="stats-bar">
-                <div class="hp-bar-container"><div class="hp-bar" style="width: 100%;"></div></div>
-                <span class="level-indicator">Niv. 1</span>
-            </div>
-            <div class="sprite hero-sprite">
-                [HÉROS]
-            </div>
+      <div class="character-zone hero-zone">
+        <div class="stats-bar">
+          <div class="hp-bar-container">
+            <div class="hp-bar" style="width: 100%"></div>
+          </div>
+          <span class="level-indicator">Niv. 1</span>
+        </div>
+        <div class="sprite hero-sprite">
+          <img
+            class="player-img"
+            src="assets/css/Personnages/Chevalier/idle_0.png"
+            alt="Chevalier"
+          />
+        </div>
+      </div>
+
+      <div class="center-zone">
+        <div class="shadow-boss">
+          <div class="sprite shadow-sprite">[OMBRE]</div>
         </div>
 
-        <div class="center-zone">
-            <div class="shadow-boss">
-                <div class="sprite shadow-sprite">[OMBRE]</div>
-            </div>
-            
-            <div class="problem-board">
-                <div id="math-problem" class="pixel-text">Prêt ?</div>
-                
-                <form id="game-form" onsubmit="return false;">
-                    <input type="number" id="answer-input" autocomplete="off" autofocus>
-                </form>
-            </div>
-        </div>
+        <div class="problem-board">
+          <div id="math-problem" class="pixel-text">Prêt ?</div>
 
+          <form id="game-form" onsubmit="return false;">
+            <input
+              type="number"
+              id="answer-input"
+              autocomplete="off"
+              autofocus
+            />
+          </form>
+        </div>
+      </div>
     </main>
 
     <div id="settings-modal" class="modal hidden">
-        <div class="parchment">
-            <button id="close-settings" class="close-btn">X</button>
-            <h2>Paramètres</h2>
-            
-            <div class="setting-row">
-                <label>Ambiance :</label>
-                <button id="theme-toggle" class="pixel-btn">☀️ Jour</button>
-            </div>
+      <div class="parchment">
+        <button id="close-settings" class="close-btn">X</button>
+        <h2>Paramètres</h2>
 
-            <div class="setting-row">
-                <label>Son :</label>
-                <button class="pixel-btn">🔊 On</button>
-            </div>
-
-            <div class="setting-row">
-                <label>Langue :</label>
-                <select class="pixel-select">
-                    <option value="fr">Français</option>
-                    <option value="en">English</option>
-                </select>
-            </div>
+        <div class="setting-row">
+          <label>Ambiance :</label>
+          <button id="theme-toggle" class="pixel-btn">☀️ Jour</button>
         </div>
+
+        <div class="setting-row">
+          <label>Son :</label>
+          <button class="pixel-btn">🔊 On</button>
+        </div>
+
+        <div class="setting-row">
+          <label>Langue :</label>
+          <select class="pixel-select">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+      </div>
     </div>
 
     <script type="module" src="js/main.js"></script>
-</body>
+  </body>
 </html>
