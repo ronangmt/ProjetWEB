@@ -38,6 +38,11 @@
           <div class="hp-bar-container">
             <div class="hp-bar" style="width: 100%"></div>
           </div>
+
+          <div class="streak-indicator">
+            <span id="streak-count">0</span>
+          </div>
+
           <span class="level-indicator">Niv. 1</span>
         </div>
         <div class="sprite hero-sprite">
@@ -46,39 +51,26 @@
             src="assets/css/Personnages/Chevalier/idle_0.png"
             alt="Chevalier"
           />
+          [HÉROS]
         </div>
       </div>
 
       <div class="center-zone">
         <div class="shadow-boss">
           <div class="sprite shadow-sprite">[OMBRE]</div>
-        
-        <div class="character-zone hero-zone">
-            <div class="stats-bar">
-                <div class="hp-bar-container"><div class="hp-bar" style="width: 100%;"></div></div>
 
-                <div class="streak-indicator">
-                    <span id="streak-count">0</span>
-                </div>
+          <div class="problem-board">
+            <div id="math-problem" class="pixel-text">Prêt ?</div>
 
-                <span class="level-indicator">Niv. 1</span>
-            </div>
-            <div class="sprite hero-sprite">
-                [HÉROS]
-            </div>
-        </div>
-
-        <div class="problem-board">
-          <div id="math-problem" class="pixel-text">Prêt ?</div>
-
-          <form id="game-form" onsubmit="return false;">
-            <input
-              type="number"
-              id="answer-input"
-              autocomplete="off"
-              autofocus
-            />
-          </form>
+            <form id="game-form" onsubmit="return false;">
+              <input
+                type="number"
+                id="answer-input"
+                autocomplete="off"
+                autofocus
+              />
+            </form>
+          </div>
         </div>
       </div>
     </main>
