@@ -108,6 +108,12 @@ body {
     background-color: rgba(255,255,255,0.2);
 }
 
+.user-name {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
 .level-indicator {
     font-size: 0.8rem;
     color: var(--text-color);
