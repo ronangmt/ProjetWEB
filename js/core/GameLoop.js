@@ -14,6 +14,7 @@ export default class GameLoop {
             input: document.getElementById('answer-input'),
             form: document.getElementById('game-form'),
             hpBar: document.querySelector('.hp-bar'),
+            streakDisplay: document.getElementById('streak-count'),
             heroSprite: document.querySelector('.hero-sprite'),
             shadowSprite: document.querySelector('.shadow-sprite')
         };
@@ -109,6 +110,15 @@ export default class GameLoop {
         // Changement de couleur selon PV
         if (hpPercent < 30) this.ui.hpBar.style.backgroundColor = '#c0392b';
         else this.ui.hpBar.style.backgroundColor = '#e74c3c';
+
+        this.ui.streakDisplay.textContent = this.hero.streak;
+        
+        // Bonus visuel : Change la couleur si la série est haute
+        if (this.hero.streak > 10) {
+            this.ui.streakDisplay.style.color = '#e74c3c'; // Rouge feu intense
+        } else {
+            this.ui.streakDisplay.style.color = '#f39c12'; // Orange normal
+        }
     }
 
     flashUI(type) {
