@@ -6,7 +6,7 @@
     --bg-color: #f4e4bc;      /* Parchemin clair */
     --text-color: #4a3b2a;    /* Encre marron foncé */
     --ui-bg: #dbb483;         /* Bois clair */
-    --accent-color: #8b4513;  /* Cuir / Bois foncé */
+    --accent-color: #4a3b2a;  /* Encre marron foncé */
     
     /* Couleurs de Gameplay */
     --hp-color: #e74c3c;      /* Rouge Vie */
@@ -20,9 +20,9 @@
 body.dark-mode {
     /* Palette Mode Nuit */
     --bg-color: #1a1a2e;      /* Bleu nuit profond */
-    --text-color: #e0e0e0;    /* Blanc cassé */
+    --text-color: white;    /* Blanc */
     --ui-bg: #16213e;         /* Bleu sombre */
-    --accent-color: #ffd700;  /* Jaune Lune */
+    --accent-color: #4a3b2a;  /* Encre marron foncé */
 }
 
 /* =========================================
@@ -160,7 +160,7 @@ body {
 
 #math-problem {
     font-size: 1.5rem;
-    color: #000;
+    color: #4a3b2a;
     margin-bottom: 1rem;
     line-height: 1.5;
 }
